@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Top 5 Filmes - A Locadora Pessoal</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <h1>A Locadora do Top 5</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Saiba Mais</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#share">Compartilhar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-container">
+
+        <aside id="sidebar">
+            <h2>Lista de Filmes</h2>
+            <nav class="movie-list-nav">
+                <ol>
+                    <li><a href="#filme1">1. O Mágico de Oz (1939)</a></li>
+                    <li><a href="#filme2">2. A Malvada (1950)</a></li>
+                    <li><a href="#filme3">3. Limite (1930)</a></li>
+                    <li><a href="#filme4">4. Stalker (1979)</a></li>
+                    <li><a href="#filme5">5. Túmulo dos Vagalumes (1988)</a></li>
+                </ol>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+
+            <h2>O Meu Ranking Pessoal: A Locadora de Filmes Favoritos</h2>
+            <p>Role para ver os 5 filmes e clique nas opções "Emprestar" ou "Vender" para simular a transação.</p>
+
+            <section class="movie-ranking" id="filme1">
+                <div class="ranking-header">
+                    <h3>#1. O Mágico de Oz (1939)</h3>
+                    <span class="rank-number">1º Lugar</span>
+                </div>
+                <p>Dorothy, uma jovem do Kansas, é levada por um tornado à mágica terra de Oz. Lá, ela embarca numa jornada para encontrar o caminho de volta para casa, acompanhada por amigos encantadores e enfrentando desafios mágicos.</p>
+                <img src="imagens/filme1.png" alt="Poster do Filme 1" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme1', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme1', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme1">Disponível para locação.</p>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme2">
+                <div class="ranking-header">
+                    <h3>#2. A Malvada (1950)</h3>
+                    <span class="rank-number">2º Lugar</span>
+                </div>
+                <p>Nos bastidores da Broadway, a estrela Margo Channing vê sua carreira ameaçada por Eve, uma jovem aparentemente inocente que se revela ambiciosa e manipuladora. Um drama sobre fama, rivalidade e decadência.</p>
+                <img src="imagens/filme2.png" alt="Poster do Filme 2" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme2', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme2', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme2">Disponível para locação.</p>
+                </div>
+            </section>
+            
+            <section class="movie-ranking" id="filme3">
+                <div class="ranking-header">
+                    <h3>#3. Limite (1930)</h3>
+                    <span class="rank-number">3º Lugar</span>
+                </div>
+                <p>Considerado o maior filme brasileiro de todos os tempos, este drama mudo e poético acompanha três náufragos em um barco, explorando temas de angústia, liberdade e memória por meio de imagens intensamente simbólicas.</p>
+                <img src="imagens/filme3.png" alt="Poster do Filme 3" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme3', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme3', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme3">Disponível para locação.</p>
+                </div>
+            </section>
+            
+            <section class="movie-ranking" id="filme4">
+                <div class="ranking-header">
+                    <h3>#4. Stalker (1979)</h3>
+                    <span class="rank-number">4º Lugar</span>
+                </div>
+                <p>Em um futuro incerto, um guia conhecido como “Stalker” leva dois homens a uma misteriosa Zona onde desejos podem se realizar. O filme mistura ficção científica e filosofia, explorando os limites da fé e da razão.</p>
+                <img src="imagens/filme4.png" alt="Poster do Filme 4" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme4', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme4', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme4">Disponível para locação.</p>
+                </div>
+            </section>
+            
+            <section class="movie-ranking" id="filme5">
+                <div class="ranking-header">
+                    <h3>#5. Túmulo dos Vagalumes (1988)</h3>
+                    <span class="rank-number">5º Lugar</span>
+                </div>
+                <p>Durante a Segunda Guerra Mundial, dois irmãos japoneses lutam para sobreviver após perderem os pais. Uma animação comovente do Studio Ghibli que retrata a dor da guerra sob o olhar infantil.</p>
+                <img src="imagens/filme5.png" alt="Poster do Filme 5" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme5', 'Emprestar')">
+                        Emprestar (R$ 5,00)
+                    </button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme5', 'Vender')">
+                        Vender (R$ 30,00)
+                    </button>
+                    <p class="status-locacao" id="status-filme5">Disponível para locação.</p>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>&copy; 2025 Ranking Pessoal de Filmes. Todos os direitos reservados.</p>
+            </footer>
+
+            <script src="locadora.js"></script>
+        </main>
+    </div>
+
+</body>
+</html>
